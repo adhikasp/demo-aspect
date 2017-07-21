@@ -1,0 +1,12 @@
+sudo: false
+language: python
+python:
+  - 3.6
+
+script:
+  - pip install git+https://github.com/adhikasp/coala@adhikasp/collect-bears
+  - pip install git+https://github.com/adhikasp/coala-bears@demo-aspect
+
+after_script:
+  # expect exit code 5
+  - coala --non-interactive

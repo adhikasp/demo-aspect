@@ -6,7 +6,7 @@ setting.
 ## Requirement
 
 - Install coala from branch adhikasp/collect-bears
-- Install coala-bears from branch adhikasp/demo
+- Install coala-bears from branch demo-aspect
 
 ## In action
 
@@ -14,7 +14,7 @@ This repo contain `demo-aspect.py`, a snippet code that contain
 **unused import** and **unused local variable**. The `.coafile` contain
 configuration to search **redundant** code in `.py` files.
 
-The desired result is the unused import and variable got fixed by coala using
+The desired result is the `cos` import got removed by coala using
 `PyUnusedCodeBear` even though we don't explicitly tell coala to use it.
 
 ### Result
