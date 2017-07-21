@@ -1,0 +1,6 @@
+[python]
+files = *.py
+aspects = Redundancy
+language = Python
+excludes = UnusedLocalVariable
+Redundancy.remove_only_standard_package = True
