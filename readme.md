@@ -5,8 +5,8 @@ setting.
 
 ## Requirement
 
-- Install coala from branch adhikasp/collect-bears
-- Install coala-bears from branch demo-aspect
+- Install coala from branch adhikasp/collect-bears, [link](https://github.com/adhikasp/coala/tree/adhikasp/collect-bears)
+- Install coala-bears from branch demo-aspect, [link](https://github.com/adhikasp/coala-bears/tree/demo-aspect)
 
 ## In action
 
