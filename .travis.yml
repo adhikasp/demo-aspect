@@ -26,11 +26,11 @@ cache:
     - ~/elm-format-0.18
     - ~/dart-sdk/bin
     - ~/.local/tailor/
-    - ~/phpmd  
+    - ~/phpmd
 
 script:
-  - pip install git+https://github.com/adhikasp/coala@adhikasp/collect-bears
-  - pip install git+https://github.com/adhikasp/coala-bears@demo-aspect
+  - pip install git+https://github.com/coala/coala
+  - pip install git+https://github.com/coala/coala-bears
 
 after_script:
   # expect exit code 5
