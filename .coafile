@@ -1,6 +1,6 @@
-[python]
+[aspect]
 files = *.py
-aspects = Redundancy
+aspects = redundancy
+redundancy:remove_non_standard_import = False
 language = Python
 excludes = UnusedLocalVariable
-Redundancy.remove_only_standard_package = True
