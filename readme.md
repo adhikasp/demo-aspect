@@ -5,8 +5,8 @@ setting.
 
 ## Requirement
 
-- Install coala from branch adhikasp/collect-bears, [link](https://github.com/adhikasp/coala/tree/adhikasp/collect-bears)
-- Install coala-bears from branch demo-aspect, [link](https://github.com/adhikasp/coala-bears/tree/demo-aspect)
+- Install [coala](https://github.com/coala/coala)
+- Install [coala-bears](https://github.com/coala/coala-bears)
 
 ## In action
 
@@ -15,7 +15,8 @@ This repo contain `demo-aspect.py`, a snippet code that contain
 configuration to search **redundant** code in `.py` files.
 
 The desired result is the `cos` import got removed by coala using
-`PyUnusedCodeBear` even though we don't explicitly tell coala to use it.
+`PyUnusedCodeBear`, and ignoring `UnusedButNonStandardPackage` and `x` unused
+variable.
 
 ### Result
 
@@ -25,19 +26,20 @@ $ coala
 ...
 
 **** PyUnusedCodeBear [Section: python] ****
-
-!    ! [Severity: NORMAL]
+demo-aspect.py
+[   2] from·math·import·sin,·cos
+**** PyUnusedCodeBear [Section: aspect | Severity: NORMAL] ****
 !    ! This file contains unused source code.
 [----] /home/dhika/Workspace/demo-aspect/demo-aspect.py
 [++++] /home/dhika/Workspace/demo-aspect/demo-aspect.py
-[    ] Line affected 1
-[    ] 
-[----] from math import sin, cos
-[++++] from math import sin
-[    ] Do (N)othing
-[    ] (O)pen file
-[    ] (A)pply patch
-[    ] Add (I)gnore comment
-[    ] (C)hain actions
-[    ] Enter number (Ctrl-D to exit): n
+[   2] from math import sin, cos
+[   2] from math import sin
+[    ] *0. Do (N)othing
+[    ]  1. (O)pen file
+[    ]  2. (A)pply patch
+[    ]  3. Print (M)ore info
+[    ]  4. Add (I)gnore comment
+[    ]  5. Show Applied (P)atches
+[    ]  6. (G)enerate patches
+[    ] Enter number (Ctrl-D to exit):
 ```
